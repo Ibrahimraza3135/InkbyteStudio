@@ -1,5 +1,6 @@
 <!--
 
+  /*
 import { Shield, Lightbulb, Target, Users, Award, Lock } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
 
@@ -228,4 +229,5 @@ export default function About({ onNavigate }: AboutProps) {
     </div>
   );
 }
+  */
 -->
