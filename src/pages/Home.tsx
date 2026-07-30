@@ -1,3 +1,5 @@
+<!--
+
 import { useState, useEffect } from 'react';
 import {
   CheckCircle,
@@ -359,3 +361,4 @@ export default function Home({ onNavigate }: HomeProps) {
     
   );
 }
+-->
