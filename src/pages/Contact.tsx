@@ -1,5 +1,5 @@
 <!--
-
+/*
 import { useState } from 'react';
 import { Mail, MapPin, Clock } from 'lucide-react';
 import AnimatedSection from '../components/AnimatedSection';
@@ -109,5 +109,5 @@ export default function Contact() {
     </div>
   );
 }
-
+*/
   -->
