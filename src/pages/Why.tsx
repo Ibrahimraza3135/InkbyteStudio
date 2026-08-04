@@ -1,7 +1,5 @@
 
-<!--
 
-  /*
 import {
   CheckCircle,
   AlertCircle,
@@ -190,5 +188,4 @@ export default function Why({ onNavigate }: WhyProps) {
     </div>
   );
 }
-*/
--->
+
