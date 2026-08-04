@@ -1,26 +1,6 @@
-import { Wrench } from 'lucide-react';
 
-export default function Home({ onNavigate }: { onNavigate?: (page: string) => void }) {
-  return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center px-4 font-sans text-white">
-      <div className="max-w-md w-full text-center p-8 bg-slate-800/80 backdrop-blur-md rounded-2xl border border-slate-700/50 shadow-2xl">
-        <div className="w-16 h-16 bg-blue-600/10 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 border border-blue-500/20">
-          <Wrench className="w-8 h-8 animate-pulse" />
-        </div>
-        <h1 className="text-3xl font-bold mb-3 tracking-tight">Under Maintenance</h1>
-        <p className="text-slate-400 mb-8 leading-relaxed text-sm sm:text-base">
-          We are currently performing scheduled maintenance to improve our services. We'll be back online shortly!
-        </p>
-        <div className="inline-flex items-center gap-2 text-xs text-blue-400 bg-blue-500/10 px-3 py-1.5 rounded-full border border-blue-500/20 font-medium">
-          <span className="w-2 h-2 rounded-full bg-blue-400 animate-ping" />
-          InkbyteStudio Team
-        </div>
-      </div>
-    </div>
-  );
-}
 
-/*
+
 import { useState, useEffect } from 'react';
 import {
   CheckCircle,
@@ -309,4 +289,4 @@ export default function Home({ onNavigate }: HomeProps) {
     </div>
   );
 }
-*/
+
