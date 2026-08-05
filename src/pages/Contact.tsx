@@ -81,27 +81,9 @@ export default function Contact() {
             </div>
           </AnimatedSection>
 
-          <AnimatedSection delay={200}>
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <MapPin className="w-12 h-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Our Office</h3>
-              <p className="text-gray-600 mb-2">Manchester, United Kingdom</p>
-              <p className="text-sm text-gray-500">
-                Serving clients worldwide remotely
-              </p>
-            </div>
-          </AnimatedSection>
+          
 
-          <AnimatedSection delay={300}>
-            <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <Clock className="w-12 h-12 text-blue-600 mb-4" />
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Business Hours
-              </h3>
-              <p className="text-gray-600 mb-2">Monday – Friday</p>
-              <p className="text-sm text-gray-500">10:00 AM – 6:00 PM GMT</p>
-            </div>
-          </AnimatedSection>
+        
         </div>
 
       </div>
