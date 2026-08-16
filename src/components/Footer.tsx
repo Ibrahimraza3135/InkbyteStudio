@@ -1,4 +1,4 @@
-﻿import { Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
 interface FooterProps {
@@ -26,7 +26,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             ],
             "contactPoint": {
               "@type": "ContactPoint",
-              "email": "alex@InkbyteStudio.net",
+              "email": "eric@inkbytestudio.net",
               "contactType": "customer support",
               "availableLanguage": "English"
             }
@@ -74,7 +74,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               <h4 className="text-lg font-bold text-white mb-4 tracking-tight">Connect</h4>
               <div className="flex justify-center space-x-4 mb-4">
                 <a
-                  href="mailto:alex@InkbyteStudio.net"
+                  href="mailto:eric@inkbytestudio.net"
                   className="p-2 bg-zinc-900 border border-amber-500/20 text-amber-500 rounded-full hover:bg-amber-500 hover:text-black transition-all duration-300 transform hover:scale-110"
                 >
                   <Mail className="w-5 h-5" />
@@ -84,10 +84,10 @@ export default function Footer({ onNavigate }: FooterProps) {
               <p className="text-sm">
                 <strong>Email:</strong>{' '}
                 <a
-                  href="mailto:alex@InkbyteStudio.net"
+                  href="mailto:eric@inkbytestudio.net"
                   className="hover:text-amber-400 transition-colors duration-300"
                 >
-                  info@InkbyteStudio.net
+                  info@inkbytestudio.net
                 </a>
               </p>
 

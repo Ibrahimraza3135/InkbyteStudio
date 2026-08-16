@@ -1,4 +1,4 @@
-﻿import { useState } from 'react';
+import { useState } from 'react';
 import { Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import AnimatedSection from '../components/AnimatedSection';
@@ -100,10 +100,10 @@ export default function Contact() {
               <Mail className="w-12 h-12 text-amber-600 mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-bold text-gray-900 mb-2">Email Us</h3>
               <a
-                href="mailto:alex@InkbyteStudio.net"
+                href="mailto:eric@inkbytestudio.net"
                 className="text-amber-600 font-semibold hover:text-amber-700 transition-colors"
               >
-                info@InkbyteStudio.net
+                info@inkbytestudio.net
               </a>
               <p className="text-sm text-gray-500 mt-2">
                 We typically respond within 24 hours
