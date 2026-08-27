@@ -92,7 +92,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               </p>
 
               <p className="text-sm mt-2">
-                <strong>Office:</strong> Manchester, United Kingdom
+                <strong>Office:</strong> Serving Clients Remotely
               </p>
               <p className="text-sm mt-1">Mon – Fri: 10 AM – 6 PM GMT</p>
             </div>
