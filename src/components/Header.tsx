@@ -95,9 +95,10 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
             {/* Logo */}
             <button
               onClick={() => onNavigate('home')}
-              className="text-2xl font-extrabold text-black hover:text-amber-600 transition-colors tracking-tight"
+              className="text-2xl font-extrabold text-black hover:text-amber-600 transition-colors tracking-tight flex items-center gap-2.5"
             >
-              Inkbyte<span className="text-amber-600">Studio</span>
+              <img src="/logo.png" alt="InkbyteStudio logo" className="w-8 h-8 rounded-full shadow-sm" />
+              <span>Inkbyte<span className="text-amber-600">Studio</span></span>
             </button>
 
             {/* Desktop Nav */}

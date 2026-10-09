@@ -41,10 +41,10 @@ export default function About({ onNavigate }: AboutProps) {
   ];
 
   const stats = [
-    { number: '500+', label: 'Articles Created' },
-    { number: '95%', label: 'Approval Rate' },
-    { number: '10+', label: 'Years Experience' },
-    { number: '50+', label: 'Industries Served' },
+    { number: '30+', label: 'Industries Served (Wikipedia)' },
+    { number: '100+', label: 'Web Projects Completed' },
+    { number: '100%', label: 'Editorial Compliance' },
+    { number: '10+', label: 'Years Combined Experience' },
   ];
 
   return (

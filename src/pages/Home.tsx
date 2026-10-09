@@ -9,7 +9,6 @@ import {
   Clock,
   ArrowRight,
   ArrowDown,
-  Star,
   Code2,
   Layers,
   Zap,
@@ -46,21 +45,14 @@ const devBenefits = [
 ];
 
 const stats = [
-  { value: '50+', label: 'Wikipedia Pages Published' },
-  { value: '30+', label: 'Web Projects Delivered' },
+  { value: '30+', label: 'Industries Served (Wikipedia)' },
+  { value: '100+', label: 'Web Development Projects' },
   { value: '100%', label: 'Compliance Rate' },
-  { value: '48h', label: 'Avg. Response Time' },
-];
-
-const testimonials = [
-  { name: 'Sarah Mitchell', role: 'CEO, TechVentures Inc.', content: 'InkbyteStudio helped us establish credibility in our industry. Their expertise with Wikipedia guidelines was invaluable.', rating: 5 },
-  { name: 'Dr. James Richardson', role: 'Author & Speaker', content: 'Professional, thorough, and transparent throughout the entire process. My Wikipedia page has significantly boosted my visibility.', rating: 5 },
-  { name: 'Maria Santos', role: 'Founder, GreenTech Solutions', content: 'Their web development team built exactly what we needed — fast, clean, and responsive. Highly recommended!', rating: 5 },
+  { value: '24/7', label: 'Monitoring & Support' },
 ];
 
 export default function Home({ onNavigate }: HomeProps) {
   const [currentStep, setCurrentStep] = useState(0);
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [activeWorkflow, setActiveWorkflow] = useState<'wikipedia' | 'webdev'>('wikipedia');
 
   useEffect(() => {
@@ -70,13 +62,6 @@ export default function Home({ onNavigate }: HomeProps) {
     }, 2000);
     return () => clearInterval(interval);
   }, [activeWorkflow]);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
 
   const activeSteps = activeWorkflow === 'wikipedia' ? wikiSteps : devSteps;
 
@@ -358,43 +343,6 @@ export default function Home({ onNavigate }: HomeProps) {
                     </AnimatedSection>
                   ))}
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </AnimatedSection>
-
-      {/* ===== TESTIMONIALS ===== */}
-      <AnimatedSection>
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
-                Trusted by Clients Worldwide
-              </h2>
-            </div>
-            <div className="max-w-3xl mx-auto">
-              <div className="bg-[#FAF9F6] border border-amber-500/10 rounded-3xl p-10 gold-shadow text-center transition-all duration-500">
-                <div className="flex justify-center gap-1 mb-4">
-                  {Array.from({ length: testimonials[currentTestimonial].rating }).map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-amber-500 fill-amber-500" />
-                  ))}
-                </div>
-                <p className="text-xl text-gray-700 italic mb-6 leading-relaxed">
-                  "{testimonials[currentTestimonial].content}"
-                </p>
-                <p className="font-bold text-gray-900">{testimonials[currentTestimonial].name}</p>
-                <p className="text-sm text-amber-700">{testimonials[currentTestimonial].role}</p>
-              </div>
-
-              <div className="flex justify-center gap-2 mt-6">
-                {testimonials.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setCurrentTestimonial(i)}
-                    className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${i === currentTestimonial ? 'bg-amber-500 scale-125' : 'bg-gray-300'}`}
-                  />
-                ))}
               </div>
             </div>
           </div>
