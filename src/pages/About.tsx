@@ -1,4 +1,4 @@
-﻿import { Shield, Lightbulb, Target, Users, Award, Lock } from 'lucide-react';
+import { Shield, Lightbulb, Target, Users, Award, Lock } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import AnimatedSection from '../components/AnimatedSection';
 
@@ -83,19 +83,14 @@ export default function About({ onNavigate }: AboutProps) {
               <div className="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed">
                 <p className="animate-slide-in-1">
                   <strong className="text-gray-900">InkbyteStudio</strong> is a
-                  dedicated team of professional writers, editors, and research
-                  analysts specializing in Wikipedia compliance.
+                  multidisciplinary digital agency pairing dedicated Wikipedia researchers and compliance editors with full-stack software engineers.
                 </p>
                 <p className="animate-slide-in-2">
-                  We ensure every article meets the highest standards of{' '}
-                  <strong className="text-amber-600 font-semibold">neutrality</strong>,{' '}
-                  <strong className="text-amber-600 font-semibold">accuracy</strong>, and{' '}
-                  <strong className="text-amber-600 font-semibold">credibility</strong>.
+                  We bridge the gap between <strong className="text-amber-600 font-semibold">encyclopedic credibility</strong> and{' '}
+                  <strong className="text-amber-600 font-semibold">modern software craftsmanship</strong>. Every Wikipedia article meets strict neutrality guidelines, and every web application is engineered for speed, security, and scalability.
                 </p>
                 <p className="animate-slide-in-3">
-                  Our team brings together expertise in journalism, academic
-                  research, and digital content strategy to navigate Wikipedia's
-                  complex editorial environment with precision and professionalism.
+                  Our team brings together decades of combined experience in journalism, encyclopedic governance, React/Node.js architecture, and automated workflow systems to deliver uncompromising digital excellence.
                 </p>
               </div>
             </div>
@@ -107,8 +102,7 @@ export default function About({ onNavigate }: AboutProps) {
             <Users className="w-16 h-16 mx-auto mb-6 text-amber-500" />
             <h2 className="text-3xl md:text-4xl font-extrabold mb-4 tracking-tight">Our Mission</h2>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed italic text-gray-300">
-              "To help notable brands and individuals gain global recognition
-              through reliable digital presence."
+              "To empower remarkable individuals and innovative businesses with enduring digital credibility and high-performance web products."
             </p>
           </div>
         </AnimatedSection>

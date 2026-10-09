@@ -210,7 +210,6 @@ export default function WikipediaGlobe() {
     let isDragging = false;
     let previousMousePosition = { x: 0, y: 0 };
     const defaultSpeedY = 0.0035;
-    const defaultSpeedX = 0.0003;
 
     const onMouseDown = (e: MouseEvent) => {
       isDragging = true;
@@ -278,7 +277,7 @@ export default function WikipediaGlobe() {
 
     // 8. Size Resize Handler
     const resizeObserver = new ResizeObserver(entries => {
-      for (let entry of entries) {
+      for (const entry of entries) {
         const w = entry.contentRect.width;
         const h = entry.contentRect.height;
         renderer.setSize(w, h);
