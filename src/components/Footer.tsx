@@ -16,7 +16,10 @@ export default function Footer({ onNavigate }: FooterProps) {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "InkbyteStudio",
+            "alternateName": "Inkbyte Studio",
             "url": "https://InkbyteStudio.net",
+            "logo": "https://inkbytestudio.net/logo.png",
+            "image": "https://inkbytestudio.net/logo.png",
             "sameAs": [
               "https://www.facebook.com/InkbyteStudio",
               "https://twitter.com/InkbyteStudio",
@@ -37,10 +40,9 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
             {/* Brand */}
             <div className="md:col-span-1">
-              <h3 className="text-xl font-extrabold text-white mb-4 tracking-tight flex items-center gap-2.5">
-                <img src="/logo.png" alt="InkbyteStudio logo" className="w-6 h-6 rounded-full" />
-                <span>Inkbyte<span className="text-amber-600">Studio</span></span>
-              </h3>
+              <div className="bg-white/95 px-3 py-1.5 rounded-lg inline-block mb-4 shadow-sm">
+                <img src="/inkbyte-logo.png" alt="Inkbyte Studio" className="h-6 w-auto object-contain" />
+              </div>
               <p className="text-sm leading-relaxed mb-4">
                 A dual-pillar digital agency — expert Wikipedia services and high-performance web development, all under one roof.
               </p>

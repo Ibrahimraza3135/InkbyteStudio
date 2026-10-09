@@ -83,6 +83,8 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
         <meta property="og:title" content={pageMeta[currentPage]?.title} />
         <meta property="og:description" content={pageMeta[currentPage]?.description} />
         <meta property="og:url" content={`https://InkbyteStudio.net/${currentPage === 'home' ? '' : currentPage}`} />
+        <meta property="og:image" content="https://inkbytestudio.net/logo.png" />
+        <meta name="twitter:image" content="https://inkbytestudio.net/logo.png" />
       </Helmet>
 
       <header
@@ -95,10 +97,10 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
             {/* Logo */}
             <button
               onClick={() => onNavigate('home')}
-              className="text-2xl font-extrabold text-black hover:text-amber-600 transition-colors tracking-tight flex items-center gap-2.5"
+              className="hover:opacity-85 transition-opacity py-1 flex items-center"
+              aria-label="InkbyteStudio Home"
             >
-              <img src="/logo.png" alt="InkbyteStudio logo" className="w-8 h-8 rounded-full shadow-sm" />
-              <span>Inkbyte<span className="text-amber-600">Studio</span></span>
+              <img src="/inkbyte-logo.png" alt="InkbyteStudio" className="h-7 sm:h-8 w-auto object-contain" />
             </button>
 
             {/* Desktop Nav */}
